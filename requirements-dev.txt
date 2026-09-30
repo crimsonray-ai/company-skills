@@ -1,0 +1,2 @@
+# Maintainer validation only; using the skills requires no Python packages.
+PyYAML==6.0.3

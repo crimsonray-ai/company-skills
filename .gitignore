@@ -1,0 +1,18 @@
+# Local tools and generated documents
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+exports/
+*.pdf
+
+# Credentials and working evidence never belong in this library
+.env
+.env.*
+!.env.example
+auth.json
+credentials.json
+local/
+reports/
+working-evidence/
+.DS_Store
