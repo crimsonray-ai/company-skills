@@ -721,12 +721,13 @@ Do not include tokens, credential files, preview approval tokens, customer recor
 
 ## 14. Command-line reference
 
-The Desktop workflow is preferred for users who do not want to manage commands. The CLI exposes the same explicit preview/apply contract.
+The Desktop workflow is preferred for users who do not want to manage commands. The CLI exposes the same explicit preview/apply contract. The examples use Bash line continuations (`\`). In PowerShell, enter each command as one logical line, omitting those continuation characters. Copy commands from the repository's Markdown when a PDF viewer introduces visual line wraps.
 
 ### Preview the recommended starter collection
 
 ```bash
-crimsonray skills company preview https://github.com/crimsonray-ai/company-skills --ref v0.1.0
+crimsonray skills company preview \
+  https://github.com/crimsonray-ai/company-skills --ref v0.1.0
 ```
 
 No files are installed by preview alone. Read the output and replace `TOKEN_FROM_PREVIEW` below with the returned token; it is not a literal value to reuse.
@@ -738,7 +739,8 @@ crimsonray skills company apply TOKEN_FROM_PREVIEW
 ### Select role collections explicitly
 
 ```bash
-crimsonray skills company preview crimsonray-ai/company-skills --ref v0.1.0 --collections essentials soc
+crimsonray skills company preview crimsonray-ai/company-skills \
+  --ref v0.1.0 --collections essentials soc
 ```
 
 Preview again after changing the ref or collections, then apply the newly reviewed token. A CLI update is another preview followed by apply; specify the intended ref and collections explicitly.
@@ -746,7 +748,8 @@ Preview again after changing the ref or collections, then apply the newly review
 ### Target an existing named profile
 
 ```bash
-crimsonray -p work skills company preview crimsonray-ai/company-skills --ref v0.1.0 --collections essentials cloud-identity
+crimsonray -p work skills company preview crimsonray-ai/company-skills \
+  --ref v0.1.0 --collections essentials cloud-identity
 crimsonray -p work skills company apply TOKEN_FROM_PREVIEW
 ```
 
