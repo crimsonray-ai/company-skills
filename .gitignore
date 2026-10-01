@@ -16,3 +16,7 @@ local/
 reports/
 working-evidence/
 .DS_Store
+
+# Interrupted local helper writes / recoverable removals
+.manifest-*.tmp
+.removed-skill-*/
