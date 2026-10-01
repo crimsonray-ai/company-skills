@@ -1,68 +1,8 @@
 {
   "version": 1,
-  "name": "Crimson Ray Security Playbooks",
+  "name": "Example library",
   "collections": {
-    "essentials": [
-      "cr-evidence-brief",
-      "cr-incident-triage",
-      "cr-remediation-plan",
-      "cr-executive-security-brief"
-    ],
-    "soc": [
-      "cr-evidence-brief",
-      "cr-incident-triage",
-      "cr-incident-timeline",
-      "cr-detection-gap-analysis",
-      "cr-threat-hunting-plan"
-    ],
-    "exposure-management": [
-      "cr-vulnerability-prioritization",
-      "cr-asset-coverage-review",
-      "cr-cloud-posture-review",
-      "cr-remediation-plan"
-    ],
-    "cloud-identity": [
-      "cr-cloud-posture-review",
-      "cr-identity-access-review",
-      "cr-saas-exposure-review",
-      "cr-asset-coverage-review"
-    ],
-    "application-security": [
-      "cr-secure-change-review",
-      "cr-software-supply-chain-review",
-      "cr-vulnerability-prioritization",
-      "cr-remediation-plan"
-    ],
-    "assurance": [
-      "cr-third-party-risk-review",
-      "cr-compliance-evidence-map",
-      "cr-evidence-brief"
-    ],
-    "leadership": [
-      "cr-executive-security-brief",
-      "cr-evidence-brief",
-      "cr-remediation-plan"
-    ],
-    "all": [
-      "cr-evidence-brief",
-      "cr-incident-triage",
-      "cr-incident-timeline",
-      "cr-vulnerability-prioritization",
-      "cr-cloud-posture-review",
-      "cr-identity-access-review",
-      "cr-saas-exposure-review",
-      "cr-detection-gap-analysis",
-      "cr-threat-hunting-plan",
-      "cr-third-party-risk-review",
-      "cr-compliance-evidence-map",
-      "cr-secure-change-review",
-      "cr-remediation-plan",
-      "cr-executive-security-brief",
-      "cr-asset-coverage-review",
-      "cr-software-supply-chain-review"
-    ]
+    "example": ["hello-world"]
   },
-  "defaults": [
-    "essentials"
-  ]
+  "defaults": ["example"]
 }
